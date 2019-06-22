@@ -27,32 +27,7 @@ box-shadow: 16px 18px 5px 0px rgba(0,0,0,0.75);
 </head>
 <body>
 
-    <?php
-    $rate =7;
- error_reporting(0);
-$principle = $_POST['principle'];
-$rate = $_POST['rate'];
-$time = $_POST['time'];
-
-
-
-                            
-
- if ($_POST['clear'])
-{
-$principle = "";
-$rate = "";
-$time = "";
-$display_results = "";
-}
- if ($_POST['compute']) 
- {
-$interest =($principle*$rate*$time)/100;
-$display_results = round($interest,2);
-
-
- }
-?>
+ 
 
         <form action="" method="POST">
 
@@ -62,17 +37,17 @@ $display_results = round($interest,2);
                     <tr>
                         <td> Amount You want to borrow: </td>
                         <td>
-                            <input type=t ext name="principle" value="<?php echo $principle;?>" size="20" autofocus>
+                            <input type=t ext name="principle" value="principle;" size="20" autofocus>
                     </tr>
                     <tr>
                         <td> Rate of Interest : </td>
                         <td>
-                            <input type=t ext name="rate" value="<?php echo $rate;?>" size="10">
+                            <input type=t ext name="rate" value="echo $rate;" size="10">
                     </tr>
                     <tr>
                         <td> Duration in Years: </td>
                         <td>
-                            <input type=t ext name="time" value="<?php echo $time;?>" size="20">
+                            <input type=t ext name="time" value="time;" size="20">
                     </tr>
                     <tr>
                         <td> </td>
@@ -80,9 +55,7 @@ $display_results = round($interest,2);
                     <tr>
                         <td>Interest Rate is </td>
                         <td>
-                            <input type=t ext name="solve_interest" value="<?php echo $display_results;
-                          
-                            ?>" size="12" readonly>
+                            <input type=t ext name="solve_interest" value="display_results" size="12" readonly>
                             
                     </tr>
                     <tr>
